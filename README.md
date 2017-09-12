@@ -43,13 +43,14 @@ The full architecture follows [Meteor's file and folder structure](https://guide
 
 `/imports` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Components and Collections that will be imported later by server and client (isomorphic). 
-Remember to import your components in `/both/routes.js` in order to use them. Routes are the nevralgic point of this App. 
-Every component, that stores its own data, must be defined and imported in the Routes to exist in the app.
-You can omit to import VM child components in the parent component, as long as children are located in a sub-folder of the same name e.g. `/imports/Home.js` `< Home / >` component will include `< Ads / >` component and don't need to import it as it is located in `/imports/Ads/Ads.js`
+Every component, that stores its own data, must be defined and imported in `/both/_Routes.js` to exist in the app.
+In Inferno-VM components, you can omit to import the children as long as they are located in a file of the same name as the sub-folder containing them 
+e.g. In `/imports/Home.js` the `< Home / >` component will include `< Ads / >` component and don't need to import it as it is located in `/imports/Ads/Ads.js`
 
 `/both` 
 This folder contains isomorphic code, used by your app and server (this is a meteor convention).
-Useful for putting Routes that will themselves import components. The `_Routes.js` file must be loaded before client and server files, hence the name (first in alphabetical order) 
+The `_Routes.js` file must be loaded before client and server files, hence the name (first in alphabetical order)
+Remember to import your components in `/both/_Routes.js` in order to use them. Routes are the nevralgic point of this App. 
 
 `/client` 
 This folder contains client (browser) code, used for routing and initializing the project (browser-side).

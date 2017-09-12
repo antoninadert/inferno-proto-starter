@@ -54,11 +54,9 @@ This folder contains client (browser) code, used for routing and initializing th
 `/server` 
 This folder contains server code, used for routing and initializing the project (server-side)
 
-Then open your localhost: http://localhost:3000/
+Then you can start adding your ViewModel components. You don't need to import them as long as you use ViewModel's file structure to omit imports. 
+You can then see the result at : http://localhost:3000/
 
-Test
--------------
-`jest`
 
 Technology that you won't need to use
 -------------

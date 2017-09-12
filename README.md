@@ -13,6 +13,8 @@ If you need to change the stack or add dependencies
 2. [Viewmodel](https://viewmodel.org/) For components,internal state management, data validation(client-side), bindings between state and view... 
 3. [Inferno](https://infernojs.org/) For the underlying layer of Viewmodel. It can be changed to [React](https://facebook.github.io/react/). See [ProtoStarter](https://github.com/antoninadert/proto-starter)
 4. [Universal router](https://github.com/kriasoft/universal-router) and [History](https://github.com/browserstate/history.js/) to provide an [easy-to-use](https://github.com/kriasoft/universal-router/issues/80), isomorphic router.
+5. To validate the data that goes from client to server, [Astronomy](http://jagi.github.io/meteor-astronomy/) is already integrated.
+6. To ease the future creation of User accounts, [accounts-password](https://docs.meteor.com/api/passwords.html) is already integrated
 
 
 Installation
@@ -90,10 +92,8 @@ Useful ressources to get started
 0. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app) --> It should be very similar with Inferno
 1. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
 2. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
-3. To validate the data that goes from client to server, it could be useful to integrate [Astronomy](http://jagi.github.io/meteor-astronomy/)
 4. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
-5. It would be interesting to add [user account](https://docs.meteor.com/api/passwords.html)
-6. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
+5. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
 
 Licence
 -------------

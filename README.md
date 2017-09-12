@@ -44,6 +44,7 @@ The full architecture follows [Meteor's file and folder structure](https://guide
 `/imports` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Components and Collections that will be imported later by server and client (isomorphic). 
 Every component, that stores its own data, must be defined and imported in `/both/_Routes.js` to exist in the app.
+
 In Inferno-VM components, you can omit to import the children as long as they are located in a file of the same name as the sub-folder containing them 
 e.g. In `/imports/Home.js` the `< Home / >` component will include `< Ads / >` component and don't need to import it as it is located in `/imports/Ads/Ads.js`
 

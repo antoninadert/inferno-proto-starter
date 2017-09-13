@@ -2,7 +2,7 @@
 An isomorphic (universal) web app starter project. This project is designed with developer productivity and happiness in mind.
 This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and fallback on Inferno (an ultra-fast, react-like library) if needed.
 This starter has SSR, isomorphic routing built-in, and will render the initial component's states directly in both client and server (first server-rendering, then client rehydration).
-It is also using Meteor platform for reactive data management. 
+It is also using Meteor platform for out-of-the-box reactive data. 
 It doesn't rely on many dependancies but can already do a lot.
 
 Technology used 

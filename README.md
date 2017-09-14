@@ -13,8 +13,7 @@ If you need to change the stack or add dependencies
 2. [Viewmodel](https://viewmodel.org/) For components,internal state management, data validation(client-side), bindings between state and view... 
 3. [Inferno](https://infernojs.org/) For the underlying layer of Viewmodel. It can be changed to [React](https://facebook.github.io/react/). See [ProtoStarter](https://github.com/antoninadert/proto-starter)
 4. [Universal router](https://github.com/kriasoft/universal-router) and [History](https://github.com/browserstate/history.js/) to provide an [easy-to-use](https://github.com/kriasoft/universal-router/issues/80), isomorphic router.
-5. To validate the data that goes from client to server, [Astronomy](http://jagi.github.io/meteor-astronomy/) is already integrated.
-6. To ease the future creation of User accounts, [accounts-password](https://docs.meteor.com/api/passwords.html) is already integrated
+5. To ease the future creation of User accounts, [accounts-password](https://docs.meteor.com/api/passwords.html) is already integrated
 
 
 Installation
@@ -84,6 +83,7 @@ Caveats
 -------------
 1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.2`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
 2. I couldn't find a way to serve data from a MongoDB collection in the server-side, hence a special code is used to generate a fake list of items on the server-side rendering, that will be replaced by DB data when client-side rendering happens.
+3. Defer bindings don't work with Inferno and ViewModel (unlike the React version), find the [issue here](https://github.com/ManuelDeLeon/viewmodel-react/issues/29)
 
 
 Related projects

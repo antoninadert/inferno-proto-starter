@@ -34,7 +34,7 @@ Ad({
     render() {
         <li b="style: styles.li">
             <span b="if:!alone, text: '#'+id + '+'+ title + '+' +description"></span>
-            <span b="if:alone, text: '#'+ad.id + '+'+ ad.title + '+' +ad.description"></span>
+            <span b="if:alone, text: '#'+id + '+'+ ad.title + '+' +ad.description"></span>
         </li>
     }
 });

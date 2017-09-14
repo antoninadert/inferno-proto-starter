@@ -1,8 +1,9 @@
 import Inferno from 'inferno'; //Necessary to write <Comp props={params} /> syntax
+import { Store } from '/imports/Store';
+import { Home } from '/imports/Home';
 import { About } from '/imports/_Global/About/About';
 import { Fourofour } from '/imports/_Global/404/404';
 import { Ideas } from '/imports/_Global/Ideas/Ideas';
-import { Home } from '/imports/Home';
 import { Ads } from '/imports/Ads/Ads';
 import { Ad } from '/imports/Ads/Ad/Ad';
 

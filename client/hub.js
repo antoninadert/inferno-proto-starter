@@ -21,4 +21,8 @@ function renderLocation(location) {
 //Initialize the first page render with current history
 renderLocation(location);
 //listen to URL(location) changes and render the new layout based on URL automatically
-history.listen((anylocation) => {renderLocation(anylocation)});
+history.listen((anylocation) => {
+  renderLocation(anylocation)
+});
+
+export {history};

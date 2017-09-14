@@ -1,5 +1,7 @@
 Ideas({
+	mixin: 'innerLink',
 	render() {
-		<h1>I will finish this page when I get an idea</h1>
+		<h1>I will finish this page when I get an idea <a href="/" b="click:innerNav">Home</a></h1>
+
 	}
 })

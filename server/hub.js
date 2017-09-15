@@ -1,5 +1,4 @@
 // All the routes, components, <head> are passing here. 
-import { Meteor } from 'meteor/meteor'
 import { renderToString } from "inferno-server";
 import { onPageLoad } from "meteor/server-render";
 import UniversalRouter from 'universal-router/legacy'; //legacy because meteor use old node version

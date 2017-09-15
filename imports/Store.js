@@ -1,6 +1,6 @@
 import ViewModel from 'viewmodel-react';
 
-ViewModel.mixin({
+ViewModel.global({
     innerLink: {
         innerNav: function (clickEvent) {
             if (Meteor.isClient) {
@@ -10,4 +10,8 @@ ViewModel.mixin({
             }
         }
     },
+})
+
+ViewModel.mixin({
+
 });

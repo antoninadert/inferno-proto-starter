@@ -1,5 +1,4 @@
 Person({
-  mixin: 'innerLink',
   name: 'Bobby',
   render(){
     <div>

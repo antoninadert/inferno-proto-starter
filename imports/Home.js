@@ -1,7 +1,6 @@
 //No Viewmodel Explorer for Inferno 
 //No defer attribute with Inferno VM (Bug)
 Home({
-  mixin: 'innerLink',
   render() {
     <div>
       <h1>It Works!</h1>

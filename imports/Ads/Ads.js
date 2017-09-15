@@ -1,7 +1,7 @@
 import { AdsCollection } from '/imports/_Collections/_Collections'
 
-//Comment next line to stop adding a new Ad at every page refresh.
-AdsCollection.insert({ title: "my Title world!", description:'my description'});
+//UnComment next line to start adding a new Ad at every page refresh.
+//AdsCollection.insert({ title: "my Title world!", description:'my description'});
 //AdsCollection.remove( { } )
 
 Ads({

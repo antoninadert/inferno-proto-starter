@@ -1,17 +1,20 @@
+import { Tracker } from 'meteor/tracker';
+import ViewModel from 'viewmodel-react';
+ViewModel.Tracker = Tracker; //link ViewModel's reactivity to Meteor's
+
 import UniversalRouter from 'universal-router';
 import createHistory from 'history/createBrowserHistory'
 import { render } from 'inferno';
 require('inferno-devtools')
-import routes from '../both/_Routes'
+import Routes from '../both/_Routes'
 
 
-const history = createHistory()
-const location = history.location
-const router = new UniversalRouter(routes);
+const History = createHistory()
+const Router = new UniversalRouter(Routes);
 
 
 function renderLocation(location) {
-  router.resolve({path: location.pathname}).then(route  => { 
+  Router.resolve({ path: location.pathname }).then(route => {
     //route is what our action() returns for a specific path
     document.title = route.title;
     render(route.component, document.getElementById("app"));
@@ -19,10 +22,10 @@ function renderLocation(location) {
 }
 
 //Initialize the first page render with current history
-renderLocation(location);
+renderLocation(History.location);
 //listen to URL(location) changes and render the new layout based on URL automatically
-history.listen((anylocation) => {
+History.listen((anylocation) => {
   renderLocation(anylocation)
 });
 
-export {history};
+export { History };

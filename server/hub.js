@@ -3,12 +3,12 @@ import { Meteor } from 'meteor/meteor'
 import { renderToString } from "inferno-server";
 import { onPageLoad } from "meteor/server-render";
 import UniversalRouter from 'universal-router/legacy'; //legacy because meteor use old node version
-import routes from '../both/_Routes'
+import Routes from '../both/_Routes'
 
-const router = new UniversalRouter(routes);
+const Router = new UniversalRouter(Routes);
 
 function renderPage(thatSink) {
-  router.resolve({path: thatSink.request.url.pathname}).then(route  => {
+  Router.resolve({path: thatSink.request.url.pathname}).then(route  => {
     thatSink.renderIntoElementById("app", renderToString(
       route.component
     ));

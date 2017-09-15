@@ -1,5 +1,6 @@
 import Inferno from 'inferno'; //Necessary to write <Comp props={params} /> syntax
 import { Store } from '/imports/Store';
+
 const routes = [
   {
     path: '/',

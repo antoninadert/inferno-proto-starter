@@ -3,14 +3,17 @@ import { Meteor } from 'meteor/meteor';
 
 
 if (Meteor.isClient) {
-    import '/client/hub'
+    import '/imports/__Startup/client/hub'
+
     Meteor.startup(() => {
+        
     });
 }
 
 if (Meteor.isServer) {
-    import '/server/hub'
-    Meteor.startup(() => {
-    });
+    import '/imports/__Startup/server/hub'
 
+    Meteor.startup(() => {
+
+    });
 }

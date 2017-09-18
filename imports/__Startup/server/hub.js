@@ -2,7 +2,7 @@
 import { renderToString } from "inferno-server";
 import { onPageLoad } from "meteor/server-render";
 import UniversalRouter from 'universal-router/legacy'; //legacy because meteor use old node version
-import Routes from '../both/_Routes'
+import Routes from '../_Routes'
 
 const Router = new UniversalRouter(Routes);
 

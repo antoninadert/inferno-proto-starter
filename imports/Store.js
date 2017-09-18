@@ -4,7 +4,7 @@ ViewModel.global({
         innerNav: function (event) {
             if (Meteor.isClient) {
                 event.preventDefault(); // prevent full page reload
-                import { History } from '/client/hub'
+                import { History } from '/imports/__Startup/client/hub'
                 History.push(event.currentTarget.getAttribute('href')); // do SPA navigation
             }
         }

@@ -6,7 +6,7 @@ import UniversalRouter from 'universal-router';
 import createHistory from 'history/createBrowserHistory'
 import { render } from 'inferno';
 require('inferno-devtools')
-import Routes from '../both/_Routes'
+import Routes from '../_Routes'
 
 
 const History = createHistory()

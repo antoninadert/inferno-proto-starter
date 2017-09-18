@@ -1,7 +1,7 @@
 import ViewModel from 'viewmodel-react';
 
 ViewModel.global({
-        innerNav: function (clickEvent) {
+        innerNav: function (event) {
             if (Meteor.isClient) {
                 event.preventDefault(); // prevent full page reload
                 import { History } from '/client/hub'

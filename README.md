@@ -53,16 +53,16 @@ Every component, that stores its own data, must be defined and imported in `/bot
 In Inferno-VM components, you can omit to import the children as long as they are located in a file of the same name as the sub-folder containing them 
 e.g. In `/imports/Home.js` the `< Home / >` component will include `< Ads / >` component and don't need to import it as it is located in `/imports/Ads/Ads.js`
 
-`/both` 
-This folder contains isomorphic code, used by your app and server (this is a meteor convention).
-The `_Routes.js` file must be loaded before client and server files, hence the name (first in alphabetical order)
-Remember to import your components in `/both/_Routes.js` in order to use them. Routes are the nevralgic point of this App. 
+`/Hub` 
+This folder contains isomorphic code, used by both client and server.
+The `_Routes.js` file must be loaded before all other files, hence the name (first in alphabetical order)
+Remember to import your components in `_Routes.js` in order to use them. Routes are the nevralgic point of this App. 
 
-`/client` 
-This folder contains client (browser) code, used for routing and initializing the project (browser-side).
+`/Hub/client` 
+This folder contains browser code, used for initializing the project (browser-side).
 
-`/server` 
-This folder contains server code, used for routing and initializing the project (server-side)
+`/Hub/server` 
+This folder contains server code, used for initializing the project (server-side)
 
 
 You can then see the result at : http://localhost:3000/

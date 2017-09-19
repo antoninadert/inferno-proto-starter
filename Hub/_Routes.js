@@ -1,11 +1,11 @@
 import Inferno from 'inferno'; //Necessary to write <Comp props={params} /> syntax
-import { Store } from '/imports/Store';
+import '/imports/Store';
 
 const routes = [
   {
     path: '/',
     action() {
-      import { Home } from '/imports/Home';      
+      import { Home } from '/imports/Home';
       return {
         title: 'Home',
         component: <Home />

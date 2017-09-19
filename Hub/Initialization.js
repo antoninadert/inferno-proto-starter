@@ -1,18 +1,15 @@
 // Point of entry of our app
 import { Meteor } from 'meteor/meteor';
 
-
 if (Meteor.isClient) {
-    import '/imports/__Startup/client/hub'
-
+    require('/Hub/client/hubClient.js');
     Meteor.startup(() => {
         
     });
 }
 
 if (Meteor.isServer) {
-    import '/imports/__Startup/server/hub'
-
+    require('/Hub/server/hubServer.js');
     Meteor.startup(() => {
 
     });

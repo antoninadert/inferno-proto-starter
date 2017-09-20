@@ -5,7 +5,9 @@ Home({
     <div>
       <h1>It Works!</h1>
       <a href="/about" b="click:innerNav">About Us</a>, 
-      <a href="/ideas" b="click:innerNav">Ideas</a>
+      <a href="/ideas" b="click:innerNav">Ideas</a>, 
+      <a href="/ads" b="click:innerNav">Ads</a>, 
+      <a href="/" b="click:innerNav">Home</a>
       <Ads />
       <Person />
     </div>

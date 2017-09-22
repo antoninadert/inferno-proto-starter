@@ -33,7 +33,7 @@ Ad({
     styles: VMstyles,
     render() {
         <li b="style: styles.li">
-            <a href={this.alone() ? '' : '/ads/' + this.id()} b="click:innerNav"><span b="if:!alone, text: '#'+id + '+'+ title + '+' +description"></span>
+            <a href={this.alone() ? '/' : '/ads/' + this.id()} b="click:innerNav"><span b="if:!alone, text: '#'+id + '+'+ title + '+' +description"></span>
             <span b="if:alone, text: '#'+id + '+'+ ad.title + '+' +ad.description"></span></a>
         </li>
     }

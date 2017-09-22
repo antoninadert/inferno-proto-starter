@@ -11,8 +11,7 @@ const routes = [
   {
     path: '/',
     action() {
-      const component = require('/imports/Home'); //conditional import is not allowed
-      const Home = component.Home // equivalent to import { Home } from '/imports/Home'; 
+      const Home = require('/imports/Home').Home; //conditional import is not allowed, so we use require
       return {
         title: 'Home',
         component: <Home />
@@ -25,8 +24,7 @@ const routes = [
       {
         path: '/',
         action() {
-          const component = require('/imports/Home');
-          const Home = component.Home
+          const Home = require('/imports/Home').Home;
           return {
             title: 'Ads',
             component: <Home />
@@ -36,8 +34,7 @@ const routes = [
       {
         path: '/:ad',
         action({ params }) {
-          const component = require('/imports/Ads/Ad/Ad');
-          const Ad = component.Ad
+          const Ad = require('/imports/Ads/Ad/Ad').Ad;
           return {
             title: 'Ad #' + params.ad,
             component: <Ad id={params.ad} alone={true} />
@@ -49,8 +46,7 @@ const routes = [
   {
     path: '/about',
     action() {
-      const component = require('/imports/_Global/About/About');
-      const About = component.About
+      const About = require('/imports/_Global/About/About').About;
       return {
         title: 'About us',
         component: <About />
@@ -59,8 +55,7 @@ const routes = [
   }, {
     path: '/ideas',
     action() {
-      const component = require('/imports/_Global/Ideas/Ideas');
-      const Ideas = component.Ideas
+      const Ideas = require('/imports/_Global/Ideas/Ideas').Ideas;
       return {
         title: 'Partagez vos idées',
         component: <Ideas />
@@ -70,8 +65,7 @@ const routes = [
   {
     path: '*',
     action() {
-      const component = require('/imports/_Global/404/404');
-      const Fourofour = component.Fourofour
+      const Fourofour = require('/imports/_Global/404/404').Fourofour;
       return {
         title: '404',
         component: <Fourofour />

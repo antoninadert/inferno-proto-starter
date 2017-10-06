@@ -13,3 +13,6 @@ Home({
     </div>
   }
 })
+
+//ProTip: Render Prop pattern
+// see https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce

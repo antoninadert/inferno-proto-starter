@@ -1,6 +1,6 @@
 //Definitely inspired from https://github.com/kriasoft/universal-router/issues/80
 import Inferno from 'inferno'; //Necessary to write <Comp props={params} /> syntax
-import '/imports/Store';
+import '/Hub/Store';
 // import { Home } from '/imports/Home';
 // import { Ad } from '/imports/Ads/Ad/Ad';
 // import { About } from '/imports/_Global/About/About';

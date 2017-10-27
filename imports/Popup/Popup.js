@@ -1,10 +1,4 @@
-const VMstyles = {
-    div: {
-        'background-color': 'aqua'
-    }
-}
-const Nostyles = {
-}
+
 Popup({
     styles: Nostyles,
     autorun() {
@@ -21,3 +15,11 @@ Popup({
         <div b="style: styles.div" >{this.props.children}</div>
     }
 });
+
+const VMstyles = {
+    div: {
+        'background-color': 'aqua'
+    }
+}
+const Nostyles = {
+}

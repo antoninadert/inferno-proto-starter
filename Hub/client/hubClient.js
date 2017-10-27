@@ -22,7 +22,7 @@ History.listen((anylocation) => {
 
 function renderLocation(location) {
   Router.resolve({ path: location.pathname }).then(route => {
-    //route is the result of action() in _Router
+    //route is what action() returns in _Router
     render(route.component, document.getElementById("app"));
     document.title = route.title;
   });

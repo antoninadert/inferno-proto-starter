@@ -1,6 +1,8 @@
 import { AdsCollection } from '/imports/_Collections/_Collections'
 import { Mongo } from 'meteor/mongo';
 
+import '/Hub/Store';
+
 const VMstyles = {
     li: {
         color: 'blue',
@@ -14,27 +16,24 @@ Ad({
         if (Meteor.isClient) {
             let mID;
             try { //necessary to handle normal _id (from Meteor) and Mongo.ObjectID (from Mongo Console) simultaneously
-                mID = new Mongo.ObjectID(this.id() )
+                mID = new Mongo.ObjectID(this.id())
             } catch (e) {
                 mID = this.id()
             }
             return AdsCollection.findOne(mID) || {};
         }
-        
+
         return {};
     },
     alone: false,
     title: '',
     description: '',
-    isRendered: false,
-    rendered() {
-        this.isRendered(true)
-    },
     styles: VMstyles,
     render() {
         <li b="style: styles.li">
-            <a href={this.alone() ? '/' : '/ads/' + this.id()} b="click:innerNav"><span b="if:!alone, text: '#'+id + '+'+ title + '+' +description"></span>
-            <span b="if:alone, text: '#'+id + '+'+ ad.title + '+' +ad.description"></span></a>
+            <a href={this.alone() ? '/' : '/ads/' + this.id()} b="click:innerNav">
+                <span b="if:!alone, text: '#'+id + '+'+ title + '+' +description"></span>
+                <span b="if:alone, text: '#'+id + '+'+ ad.title + '+' +ad.description"></span></a>
         </li>
     }
 });

@@ -10,7 +10,7 @@ import { Fourofour } from '/imports/_Global/404/404';
 
 const routes = [
   {
-    path: '/',
+    path: '',
     action() {
       return {
         title: 'Home',
@@ -61,7 +61,7 @@ const routes = [
     }
   },
   {
-    path: '*',
+    path: '(.*)',
     action() {
       return {
         title: '404',

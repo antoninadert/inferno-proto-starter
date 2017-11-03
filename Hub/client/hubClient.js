@@ -21,7 +21,7 @@ History.listen((anylocation) => {
 });
 
 function renderLocation(location) {
-  Router.resolve({ path: location.pathname }).then(route => {
+  Router.resolve({ pathname: location.pathname }).then(route => {
     //route is what action() returns in _Router
     render(route.component, document.getElementById("app"));
     document.title = route.title;

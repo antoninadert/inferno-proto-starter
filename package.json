@@ -8,17 +8,15 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-plugin-inferno": "^3.2.0",
+    "babel-runtime": "^6.26.0",
     "core-js": "^2.5.1",
     "bcrypt": "^1.0.3",
     "history": "^4.7.2",
-    "inferno": "^3.9.0",
-    "inferno-component": "^3.9.0",
-    "inferno-server": "^3.9.0",
+    "inferno": "^3.10.1",
+    "inferno-component": "^3.10.1",
+    "inferno-server": "^3.10.1",
     "meteor-node-stubs": "~0.2.4",
-    "universal-router": "^3.2.0",
+    "universal-router": "^5.0.0",
     "viewmodel-react": "^2.4.1",
     "viewmodel-react-plugin": "^3.1.0"
   },
@@ -45,8 +43,9 @@
   "devDependencies": {
     "eslint": "^4.7.2",
     "babel-eslint": "^8.0.0",
+    "babel-plugin-inferno": "^3.3.0",
     "eslint-plugin-inferno": "^7.0.1",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "inferno-devtools": "^3.9.0"
+    "inferno-devtools": "^3.10.1"
   }
 }

@@ -15,7 +15,7 @@
   });
   function renderPage(thatSink) {
     //Async, await because we need to use the sink inside this promise
-    Router.resolve({ path: thatSink.request.url.pathname }).then(route => {
+    Router.resolve({ pathname: thatSink.request.url.pathname }).then(route => {
       thatSink.renderIntoElementById("app", renderToString(
         route.component
       ));

@@ -32,6 +32,7 @@ const PopStyles = {
         'top': '0px',
         'left': '0px',
         'width': '100%',
+        'min-width': '500px',
         'height': '1000000px',
         'z-index': '9998',
         'background': 'rgba(0, 0, 0, 0.3)'

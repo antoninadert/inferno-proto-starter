@@ -1,7 +1,9 @@
 import ViewModel from 'viewmodel-react';
 
 ViewModel.share({
-    
+    popupstate: {
+        opened:false
+    }
 });
 
 ViewModel.mixin({

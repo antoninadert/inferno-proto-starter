@@ -2,7 +2,7 @@
 //No defer attribute with Inferno VM (Bug)
 import { Popup } from '/imports/Popup/Popup';
 Home({
-  popupOpened: false,
+  share: 'popupstate',
   autorun() {
     if (Meteor.isClient) {
 
@@ -10,15 +10,16 @@ Home({
   },
   render() {
     <div>
-      <Popup opened={this.popupOpened()}>
+      <Popup>
         <h1>It Works!</h1>
         <a href="/about" b="click:innerNav">About Us</a>, 
         <a href="/ideas" b="click:innerNav">Ideas</a>, 
         <a href="/ads" b="click:replaceNav">Ads</a>, 
         <a href="/" b="click:replaceNav">Home</a>, 
-        <button b="toggle:popupOpened">Modal</button>
+        <button b="click: opened(true)">Modal</button>
         <Ads />
         <Person />
+        <button b="click: opened(true)">Modal</button>
       </Popup>
     </div>
   }

@@ -1,3 +1,4 @@
+//All client-side package, Stores, routes, <head>, <Components> are passing heres
 import { Tracker } from 'meteor/tracker';
 import ViewModel from 'viewmodel-react';
 ViewModel.Tracker = Tracker; //link ViewModel's reactivity to Meteor's

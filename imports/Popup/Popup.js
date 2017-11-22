@@ -17,7 +17,41 @@ Popup({
     render() {
         <div id='container-popup' >
             <div b="style: styles.backdrop, click: opened(false)" id='bg-drop'></div>
-            <div b="style: styles.content" id='popup-content'></div>
+            <div b="style: styles.content" id='popup-content'>
+                <header b="style: styles.header">
+                    <h1 style="display:inline-block">My popup title</h1>
+                    <button b="click: opened(false)" title="close">X</button>
+                </header>
+                <section b="style: styles.section">
+                    <div>My popup content goes there</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum</div>
+                </section>
+                <footer  b="style: styles.footer">
+                    <button b="click: opened(false)" title="close">Close this modal</button>
+                </footer>
+            </div>
             <div id='base-app'>
                 {this.props.children}
             </div>
@@ -47,11 +81,31 @@ const PopStyles = {
         'top':'50%',
         'margin-left':'-250px',
         'margin-top':'-250px',
-        'z-index':'9999'
+        'z-index':'9999',
+    },
+    header: {
+        'width': '100%',
+        'height': '6em'
+    },
+    section: {
+        'position': 'absolute',
+        'top': '6em',
+        'bottom': '3em',
+        'width': '100%',
+       'overflow-y': 'auto',
+    },
+    footer: {
+        'position': 'absolute',
+        'bottom': '0',
+        'width': '100%',
+       'height': '3em',
     }
 }
 const NoStyles = {
     backdrop: {
+        'display':'none'
+    },
+    content: {
         'display':'none'
     }
 }

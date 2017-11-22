@@ -1,4 +1,4 @@
-import { AdsCollection } from '/imports/_Collections/_Collections'
+import { AdsCollection } from '/Hub/Connexion'
 
 //UnComment next line to start adding a new Ad at every page refresh.
 //AdsCollection.insert({ title: "my Title world!", description:'my description'});

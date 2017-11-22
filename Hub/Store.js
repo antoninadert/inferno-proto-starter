@@ -1,15 +1,5 @@
 import ViewModel from 'viewmodel-react';
 
-ViewModel.share({
-    popupstate: {
-        opened:false
-    }
-});
-
-ViewModel.mixin({
-
-});
-
 ViewModel.global({
     innerNav: function (event) {
         if (Meteor.isClient) {
@@ -26,3 +16,13 @@ ViewModel.global({
         }
     }
 })
+
+ViewModel.share({
+    popupstate: {
+        opened:false
+    }
+});
+
+ViewModel.mixin({
+
+});

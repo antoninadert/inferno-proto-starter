@@ -10,3 +10,9 @@ li {
 body {
     margin:8px;
 }
+
+.popup-close-button {
+    position: absolute;
+    right:10px;
+    top:10px;
+}

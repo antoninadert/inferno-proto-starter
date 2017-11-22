@@ -1,7 +1,5 @@
-import { AdsCollection } from '/imports/_Collections/_Collections'
-import { Mongo } from 'meteor/mongo';
+import { AdsCollection } from '/Hub/Connexion'
 
-import '/Hub/Store';
 
 const VMstyles = {
     li: {

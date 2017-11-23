@@ -19,7 +19,7 @@ Popup({
             <div b="style: styles.backdrop, click: opened(false)" id='bg-drop'></div>
             <div b="style: styles.content" id='popup-content'>
                 <header b="style: styles.header">
-                    <h1 style="display:inline-block;margin:0px;" class="popup-h1-title">My popup title</h1>
+                    <h1 class="popup-h1-title">My popup title</h1>
                     <button b="click: opened(false)" class="popup-close-button" title="close">X</button>
                 </header>
                 <section b="style: styles.section">
@@ -86,12 +86,14 @@ const PopStyles = {
     header: {
         'overflow': 'hidden',
         'width': '100%',
-        'height': '25%'
+        'height': '14vh',
+        'max-height': '90px',
     },
     section: {
         'position': 'absolute',
-        'top': '6em',
+        'top': '90px',
         'bottom': '3em',
+        'margin': '8px',
         'width': '100%',
        'overflow-y': 'auto',
     },

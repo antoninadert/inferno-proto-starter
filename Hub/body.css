@@ -1,3 +1,4 @@
+
 li {
     height: 10vh;
     color:red;
@@ -10,9 +11,35 @@ li {
 body {
     margin:8px;
 }
+input, button {
+    font-family: Neucha,sans-serif !important
+}
+
+
+/* POPUP */
 
 .popup-close-button {
     position: absolute;
     right:10px;
     top:10px;
+    padding: 5px 12px 3px 12px;
 }
+
+.popup-h1-title {
+    display:inline-block;
+    margin:0px;
+    font-size: 36px;
+    font-size:12vw;
+}
+@media all and (min-width: 500px) {
+    .popup-h1-title{
+        font-size: 62.5px;
+      }
+    }
+@media all and (max-width: 360px) {
+        .popup-h1-title{
+            font-size: 30px;
+            font-size: 12vw;
+            width: calc(100% - 50px);
+          }
+        }

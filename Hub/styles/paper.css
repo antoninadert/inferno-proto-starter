@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC);
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Amaranth|Gloria+Hallelujah|Raleway|Signika);
 
 html {
   box-sizing: border-box
@@ -237,7 +238,7 @@ template {
 }
 html {
   font-size: 20px;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   color: #41403e
 }
 a,
@@ -252,7 +253,7 @@ td,
 th,
 thead,
 tr {
-  font-family: Lato,sans-serif
+  font-family: Lato, sans-serif;
 }
 h1,
 h2,
@@ -260,7 +261,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Patrick Hand SC',sans-serif;
+  font-family: Signika, sans-serif;
   font-weight: 400
 }
 h1 {

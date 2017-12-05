@@ -1,7 +1,14 @@
+if(Meteor.isClient) {
+    import './popup.css'
+}
+
 
 Popup({
     share: 'popupstate',
     styles: NoStyles,
+    popupTitle:'My popup title',
+    popupSection: <PopSection />,
+    popupFooter: <PopFooter />,
     autorun() {
         if (Meteor.isClient) {
             if (this.opened()) {
@@ -19,38 +26,11 @@ Popup({
             <div b="style: styles.backdrop, click: opened(false)" id='bg-drop'></div>
             <div b="style: styles.content" id='popup-content'>
                 <header b="style: styles.header">
-                    <h1 class="popup-h1-title">My popup title</h1>
+                    <h1 class="popup-h1-title">{this.popupTitle()}</h1>
                     <button b="click: opened(false)" class="popup-close-button" title="close">X</button>
                 </header>
-                <section b="style: styles.section">
-                    <div>My popup content goes there</div>
-                    <div>Lorem ipsum</div>  
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum</div>
-                </section>
-                <footer  b="style: styles.footer">
-                    <button b="click: opened(false)" title="close">Close this modal</button>
-                </footer>
+                {this.popupSection()}
+                {this.popupFooter()}
             </div>
             <div id='base-app'>
                 {this.props.children}
@@ -89,20 +69,7 @@ const PopStyles = {
         'height': '14vh',
         'max-height': '90px',
     },
-    section: {
-        'position': 'absolute',
-        'top': '90px',
-        'bottom': '3em',
-        'margin': '8px',
-        'width': '100%',
-       'overflow-y': 'auto',
-    },
-    footer: {
-        'position': 'absolute',
-        'bottom': '0',
-        'width': '100%',
-       'height': '3em',
-    }
+
 }
 const NoStyles = {
     backdrop: {

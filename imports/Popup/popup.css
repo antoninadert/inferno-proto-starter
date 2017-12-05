@@ -1,21 +1,3 @@
-
-li {
-    height: 10vh;
-    color:red;
-    font-family: 'Lato', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-}
-
-body {
-    margin:8px;
-}
-input, button {
-    font-family: Neucha,sans-serif !important
-}
-
-
 /* POPUP */
 
 .popup-close-button {
@@ -31,9 +13,9 @@ input, button {
     font-size: 36px;
     font-size:12vw;
 }
-@media all and (min-width: 500px) {
+@media all and (min-width: 400px) {
     .popup-h1-title{
-        font-size: 62.5px;
+        font-size: 48px;
       }
     }
 @media all and (max-width: 360px) {

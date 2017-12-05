@@ -1,6 +1,8 @@
 //No Viewmodel Explorer for Inferno 
 //No defer attribute with Inferno VM (Bug)
 import { Popup } from '/imports/Popup/Popup';
+import { PopSection } from '/imports/Popup/PopSection/PopSection';
+import { PopFooter } from '/imports/Popup/PopFooter/PopFooter';
 Home({
   share: 'popupstate',
   autorun() {
@@ -10,7 +12,7 @@ Home({
   },
   render() {
     <div>
-      <Popup>
+      <Popup popupTitle='I am magic' popupSection={<PopSection />} popupFooter={<PopFooter />} >
         <h1>It Works!</h1>
         <a href="/about" b="click:innerNav">About Us</a>, 
         <a href="/ideas" b="click:innerNav">Ideas</a>, 
